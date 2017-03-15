@@ -1,0 +1,37 @@
+<style>
+/* The Modal (background) */.modal {display: none; /* Hidden by default */position: fixed; /* Stay in place */z-index: 1; /* Sit on top */padding-top: 100px; /* Location of the box */left: 0;top: 0;width: 100%; /* Full width */height: 100%; /* Full height */overflow: auto; /* Enable scroll if needed */background-color: rgb(0,0,0); /* Fallback color */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */}/* Modal Content */.modal-content {background-color: #fefefe;padding: 20px;max-width: 1023px;margin-left: auto;margin-right: auto;border-radius: 12px;}button{display: block;position: relative;width: 120px;padding: 0;margin: 10px 20px 10px 0;font-weight: 600;text-align: center;line-height: 50px;color: #FFF;border-radius: 5px;transition: all 0.2s;background: #00AE68;box-shadow: 0px 5px 0px 0px #007144;border: none;cursor: pointer;}button:hover {margin-top: 15px;margin-bottom: 5px;box-shadow: 0px 0px 0px 0px #007144;}.tombol {width:18%;margin: 0 auto 20px;display: block;}/* The Close Button */.close {color: #aaaaaa;float: right;font-size: 28px;font-weight: bold;}.close:hover,.close:focus {color: #000;text-decoration: none;cursor: pointer;}#x {width: 20px;height: 20px;background-color: #2c2822;position: relative;border-radius: 3px;top: -13px;left: 12px;}#x:after,#x:before{position:absolute;top:9px;left:0px;content:'';display:block;width:20px;height:2px;background-color:red;}#x:after{-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}#x:before{-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}</style>
+</head>
+<body>
+<div class='tombol'>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+<div class="modal-content">
+  <span id='x' class="close"></span>
+  <script type='text/javascript'>
+    //<![CDATA[
+    document.write('<iframe src="https://pixlr.com/editor/" allowfullscreen="allowfullscreen" style="height: 700px; width: 100%;border: none;"></iframe>');
+    //]]>
+    </script>
+    </div>
+  </div>
+
+<script>
+  var modal = document.getElementById('myModal');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
