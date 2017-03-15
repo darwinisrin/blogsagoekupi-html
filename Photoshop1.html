@@ -1,0 +1,9 @@
+<div class="photoshop-online loader" data-src="http://pixlr.com/editor/" >
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+setTimeout(function(){
+$('.photoshop-online').each(function(){
+$(this).replaceWith('<iframe class="photoshop-online loader" src="'+$(this).data('src')+'" allowfullscreen="allowfullscreen" style="height: 700px; width: 100%"></iframe>')})},1000);
+//]]>
+</script>
